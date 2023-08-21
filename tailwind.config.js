@@ -108,7 +108,8 @@ module.exports = withMT({
         "99p": "99%",
       },
       fontFamily: {
-        IRANSansFaNum: ["Shabnam-FD", "Tahome"],
+        EstedadFD: ["Estedad-FD", "Tahome"],
+        Estedad: ["Estedad", "Tahome"],
       },
       boxShadow: {
         "3xl": "14px 17px 40px 4px",
@@ -138,7 +139,7 @@ module.exports = withMT({
     colors: () => ({
       white: "#ffffff",
       lightPrimary: "#F4F7FE",
-      MainBrandColor: "#4318FF",
+      PrimaryBrandColor: "#417F56",
       SecondBrandColor: "#868CFF",
       transparent: "transparent",
       slate: {
@@ -411,17 +412,48 @@ module.exports = withMT({
         900: "#881337",
         950: "#4c0519",
       },
-      mainBrand: {
-        50: "#E9E3FF",
-        100: "#C0B8FE",
-        200: "#A195FD",
-        300: "#8171FC",
-        400: "#7551FF",
-        500: "#422AFB",
-        600: "#3311DB",
-        700: "#2111A5",
-        800: "#190793",
-        900: "#11047A",
+      brand: {
+        50: "#E5F2E9",
+        100: "#CAE4D3",
+        200: "#B0D7BD",
+        300: "#96C9A7",
+        400: "#7CBC91",
+        500: "#61AE7B",
+        600: "#4E9968",
+        700: "#396F4B",
+        800: "#315F41",
+        900: "#294F36",
+        950: "#21402B",
+        960: "#183020",
+        970: "#102016",
+        980: "#08100B",
+      },
+      nautral: {
+       50: "#e1e1e1",
+       100: "#ededed",
+       200: "#cbcbcb",
+       300: "#adadad",
+       400: "#757575",
+       500: "#717171",
+       600: "#353535",
+      },
+      black: {
+        900: "#0C0C0C",
+      },
+      error : {
+        50: "#FFF2F2",
+        300: "#ED2E2E",
+        500 : "#C30000",
+      },
+      success : {
+        50: "#F3FDFA",
+        300: "#00BA88",
+        500 : "#00966D",
+      },
+      warning : {
+        50: "#FFF8E1",
+        300: "#F4B740",
+        500 : "#A9791C",
       },
       shadow: {
         500: "rgba(112, 144, 176, 0.08)",

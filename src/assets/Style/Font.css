@@ -1,103 +1,125 @@
-/* ----------------------------- Shabnam FaNum ----------------------------- */
+/* ----------------------------- Estedad FaNum ----------------------------- */
 @font-face {
-	font-family: Shabnam-FD;
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad-FD;
 	font-style: normal;
 	font-weight: bold;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Bold-FD.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Bold-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold-FD.ttf') format('truetype');
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
 }
 @font-face {
-	font-family: Shabnam-FD;
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad-FD;
 	font-style: normal;
 	font-weight: 500;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Medium-FD.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Medium-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium-FD.ttf') format('truetype');
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
 }
 @font-face {
-	font-family: Shabnam-FD;
-	font-style: normal;
-	font-weight: 300;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Light-FD.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Light-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Light-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Light-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Light-FD.ttf') format('truetype');
-}
-@font-face {
-	font-family: Shabnam-FD;
-	font-style: normal;
-	font-weight: 200;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Thin-FD.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Thin-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin-FD.ttf') format('truetype');
-}
-@font-face {
-	font-family: Shabnam-FD;
+	font-family: Estedad-FD;
 	font-style: normal;
 	font-weight: normal;
-	src: url('../Fonts/Shabnam-FD/Shabnam-FD.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-FD.ttf') format('truetype');
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+}
+@font-face {
+	font-family: Estedad-FD;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../Fonts/Estedad-FD/Estedad-FD-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 }
 
-/* ----------------------------- Shabnam ----------------------------- */
+/* ----------------------------- Estedad ----------------------------- */
 @font-face {
-	font-family: Shabnam;
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../Fonts/Estedad/Estedad-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../Fonts/Estedad/Estedad-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad;
 	font-style: normal;
 	font-weight: bold;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Bold.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Bold.ttf') format('truetype');
+	src: url('../Fonts/Estedad/Estedad-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
 }
 @font-face {
-	font-family: Shabnam;
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../Fonts/Estedad/Estedad-SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad;
 	font-style: normal;
 	font-weight: 500;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Medium.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Medium.ttf') format('truetype');
+	src: url('../Fonts/Estedad/Estedad-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
 }
 @font-face {
-	font-family: Shabnam;
-	font-style: normal;
-	font-weight: 300;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Light.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Light.ttf') format('truetype');
-}
-@font-face {
-	font-family: Shabnam;
-	font-style: normal;
-	font-weight: 200;
-	src: url('../Fonts/Shabnam-FD/Shabnam-Thin.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam-Thin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam-Thin.ttf') format('truetype');
-}
-@font-face {
-	font-family: Shabnam;
+	font-family: Estedad;
 	font-style: normal;
 	font-weight: normal;
-	src: url('../Fonts/Shabnam-FD/Shabnam.eot');
-	src: url('../Fonts/Shabnam-FD/Shabnam.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('../Fonts/Shabnam-FD/Shabnam.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('../Fonts/Shabnam-FD/Shabnam.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('../Fonts/Shabnam-FD/Shabnam.ttf') format('truetype');
+	src: url('../Fonts/Estedad/Estedad-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../Fonts/Estedad/Estedad-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+
+}
+@font-face {
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../Fonts/Estedad/Estedad-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+}
+@font-face {
+	font-family: Estedad;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../Fonts/Estedad/Estedad-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 }
