@@ -1,0 +1,40 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    width: 32px;
+    height: 32px;
+    color: #ffffff;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+.swiper-pagination {
+    background-image: url("../Images/Slider/SliderBulletsBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+}
+.swiper-pagination-bullet-active {
+    background: #417F56;
+    width: 11px;
+    height: 11px;
+}
