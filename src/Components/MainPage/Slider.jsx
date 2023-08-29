@@ -69,7 +69,7 @@ const Slider = () => {
           disableOnInteraction: false,
       }}
       modules={[Pagination, Navigation , Autoplay]}
-      className="mySwiper"
+      className="mySwiper h-80 md:w-full"
     >
         {
             Sliders.map(({id,imgSrc,imgAlt,text,btnText}) => {
@@ -77,7 +77,7 @@ const Slider = () => {
 
       <SwiperSlide key={id}>
         <img src={imgSrc} alt={imgAlt} />
-        <Typography variant="h4" className="text-white absolute">
+        <Typography variant="h4" className="text-white absolute top-8 md:top-20">
             {text}
         </Typography>
         <Button className="btns absolute bottom-12">

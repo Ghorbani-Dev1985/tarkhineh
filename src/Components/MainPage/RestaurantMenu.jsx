@@ -3,25 +3,25 @@ import React from 'react';
 
 const Menus = [
     {
-        id:1,
+        id: 1,
         imgSrc: "../src/assets/Images/Menu/menu1.png",
         imgAlt: "غذای اصلی",
         btnText: "غذای اصلی",
     },
     {
-        id:2,
+        id: 2,
         imgSrc: "../src/assets/Images/Menu/menu2.png",
         imgAlt: "پیش غذا",
         btnText: "پیش غذا ",
     },
     {
-        id:1,
+        id: 3,
         imgSrc: "../src/assets/Images/Menu/menu3.png",
         imgAlt: " دسر",
         btnText: " دسر",
     },
     {
-        id:1,
+        id: 4,
         imgSrc: "../src/assets/Images/Menu/menu4.png",
         imgAlt: " نوشیدنی",
         btnText: " نوشیدنی",
@@ -30,15 +30,15 @@ const Menus = [
 
 const RestaurantMenu = () => {
     return ( 
-      <section className='container mx-auto grid grid-cols-12 gap-3 mt-44 mb-8 px-1 md:px-0'>
+      <section className='container mx-auto grid grid-cols-12 gap-y-28 md:gap-y-64 gap-x-4 lg:gap-x-3 mt-20 md:mt-44 mb-8 px-1 lg:px-0'>
             {
                 Menus.map(({id, imgSrc , imgAlt , btnText}) => {
                     return(                   
         <div key={id} className='col-span-6 lg:col-span-3'>
-            <div  className='relative flex flex-col items-center border-2 border-PrimaryBrandColor rounded-lg min-h-max h-[180px]'>
-                <img src={imgSrc} alt={imgAlt} className='absolute -top-32' />
-               <Button className='btns w-[165px] absolute left-auto right-auto -bottom-6'>
-               {btnText}
+            <div  className='relative flex flex-col items-center bg-PrimaryBrandColor rounded-lg min-h-max h-24 md:h-[180px]'>
+                <img src={imgSrc} alt={imgAlt} className={`${id === 4 && "md:-top-48"} absolute -top-16 md:-top-32 w-28 h-28 md:w-max md:h-max`} />
+               <Button className='bg-white text-nautral-600 font-normal w-24 px-2 md:w-[155px] absolute left-auto right-auto -bottom-6'>
+               <span className='text-xs md:text-lg'>{btnText}</span>
                </Button>
             </div>
         </div>

@@ -33,7 +33,7 @@ import {
   PuzzlePieceIcon,
   GiftIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SearchNormal1, ShoppingCart, User } from "iconsax-react";
  
 const colors = {
@@ -295,23 +295,23 @@ function NavList() {
         variant="small"
         className="font-normal"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <NavLink end to="/" className="flex items-center gap-2 py-2 pr-4">
           صفحه اصلی
-        </ListItem>
+        </NavLink>
       </Typography>
       <RestaurantMenusMnnu />
       <BranchesMnnu />
       {
         NavListItems.map(({id , to , title}) => {
           return(
-      <Link
+      <NavLink
       key={id}
        to={to}
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
          {title}
         </ListItem>
-      </Link>
+      </NavLink>
 
           )
         })

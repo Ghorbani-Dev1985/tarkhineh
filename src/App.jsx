@@ -11,8 +11,8 @@ function App() {
     <>
      <Toaster />
      <Routes>
-       <Route element={<Layout/>}>
-        <Route path='/' element={<MainPage />}/>
+       <Route path='/' element={<Layout/>}>
+        <Route index element={<MainPage />}/>
        </Route>
      </Routes>
     </>
