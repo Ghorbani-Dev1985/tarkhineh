@@ -5,6 +5,8 @@ import RestaurantMenu from "./RestaurantMenu";
 import FormikInput from "../../Common/FormikInput";
 import { SearchNormal1 } from "iconsax-react";
 import Introduction from "./Introduction";
+import Section from "../../Common/Section";
+import Branches from "./Branches";
 
 const MainPage = () => {
   return (
@@ -15,11 +17,13 @@ const MainPage = () => {
           <SearchNormal1 />
         </FormikInput>
       </div>
-      <section className="container p-1 md:p-0 flex flex-col items-center mx-auto my-8 text-nautral-600">
-        <Typography variant="h4">منوی رستوران</Typography>
+      <Section sectionTitle="منوی رستوران" className="mb-6 md:mb-12">
         <RestaurantMenu />
-      </section>
+      </Section>
         <Introduction />
+      <Section sectionTitle="ترخینه گردی">
+      <Branches />
+      </Section>
     </>
   );
 };
