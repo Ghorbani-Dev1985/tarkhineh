@@ -43,97 +43,27 @@ import {
   Wallet2,
 } from "iconsax-react";
 
-const colors = {
-  blue: "bg-blue-50 text-blue-500",
-  orange: "bg-orange-50 text-orange-500",
-  green: "bg-green-50 text-green-500",
-  "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
-  purple: "bg-purple-50 text-purple-500",
-  teal: "bg-teal-50 text-teal-500",
-  cyan: "bg-cyan-50 text-cyan-500",
-  pink: "bg-pink-50 text-pink-500",
-};
 
-const BranchesMnnuItems = [
-  {
-    imgSrc: "src/assets/Images/Branch/branch1.png",
-    imgAlt: "شعبه اکباتان",
-    title: "شعبه اکباتان",
-    description: "شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم",
-  },
-  {
-    color: "orange",
-    icon: ChatBubbleOvalLeftIcon,
-    title: "شعبه سهروردی",
-    description: "News and writings, press releases, and resources",
-  },
-  {
-    color: "green",
-    icon: UsersIcon,
-    title: (
-      <div className="flex items-center gap-1">
-        Careers{" "}
-        <Chip
-          size="sm"
-          color="green"
-          variant="ghost"
-          value="We're hiring!"
-          className="capitalize"
-        />
-      </div>
-    ),
-    description: "We are always looking for talented people. Join us!",
-  },
-  {
-    color: "blue-gray",
-    icon: FolderIcon,
-    title: "شعبه آرژانتین",
-    description: "All the stuff that we dan from legal made us add.",
-  },
-  {
-    color: "purple",
-    icon: RocketLaunchIcon,
-    title: "شعبه شهرک غرب",
-    description: "Checkout our products that helps a startup running.",
-  },
-  {
-    color: "teal",
-    icon: FaceSmileIcon,
-    title: "شعبه جنوب شهر",
-    description: "Set of beautiful icons that you can use in your project.",
-  },
-  {
-    color: "cyan",
-    icon: PuzzlePieceIcon,
-    title: "شعبه ونک ",
-    description: "High quality UI Kits helps you to 2x faster.",
-  },
-  {
-    color: "pink",
-    icon: GiftIcon,
-    title: "شعبه فاطمی ",
-    description: "List of all our open-source projects, it's all free.",
-  },
-];
+import BranchesMnnuItems from './../../util/Branches' 
 
 function BranchesMnnu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const renderItems = BranchesMnnuItems.map(
-    ({  title, description, imgSrc , imgAlt}, key) => (
-      <Link to="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <img src={imgSrc} alt={imgAlt} className="rounded-xl"/>
-          <div>
+    ({ id, branchTitle, branchAddress, imgSrc , imgAlt , branchLink}) => (
+      <Link to={branchLink} key={id} className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300">
+        <MenuItem className="flex flex-col items-center gap-5 rounded-lg">
+         <div><img src={imgSrc} alt={imgAlt} className="rounded-xl"/></div> 
+          <div className="flex flex-col items-center">
             <Typography
               variant="h6"
-              className="flex items-center text-sm text-nautral-500"
+              className="flex items-center my-4 text-center text-sm text-nautral-700"
             >
-              {title}
+              {branchTitle}
             </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
-              {description}
+            <Typography variant="paragraph" className="font-normal text-center text-nautral-700">
+              {branchAddress}
             </Typography>
           </div>
         </MenuItem>
@@ -217,13 +147,13 @@ function RestaurantMenusMnnu() {
     useState(false);
 
   const renderItems = RestaurantMenusMnnuItems.map(({ id, to, title, image}) => (
-    <Link key={id} to={to}>
-      <MenuItem className="flex items-center gap-3 rounded-lg">
-        <div className="flex justify-center items-center">
-          <img src={image} alt="رستوران‌های ترخینه" className="w-12 h-12 object-fill ml-2"/>
+    <Link key={id} to={to} className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300">
+      <MenuItem className="flex flex-col items-center gap-3 rounded-lg">
+        <div className="flex flex-col items-center">
+          <img src={image} alt="رستوران‌های ترخینه" className="w-12 h-12 object-fill"/>
           <Typography
             variant="h6"
-            className="flex items-center text-sm text-nautral-500"
+            className="flex my-4 items-center text-sm text-nautral-500"
           >
             {title}
           </Typography>
@@ -420,7 +350,7 @@ const Header = () => {
                         className="border-b last:border-b-0 border-nautral-100 rounded-none"
                       >
                         <Typography
-                          variant="p"
+                          variant="paragraph"
                           className="flex items-center text-nautral-600"
                         >
                           {icon}

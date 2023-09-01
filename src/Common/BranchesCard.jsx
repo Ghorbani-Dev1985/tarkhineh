@@ -39,7 +39,7 @@ const BranchesCard = ({
             {branchTitle}
           </Typography>
           <Typography
-            variant="p"
+            variant="paragraph"
             className="text-sm md:text-2xl font-medium mb-2 text-center text-nautral-700"
           >
             {branchAddress}

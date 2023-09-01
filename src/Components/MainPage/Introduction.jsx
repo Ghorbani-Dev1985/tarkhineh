@@ -10,7 +10,7 @@ const Introduction = () => {
       <Typography variant="h2" className="text-white text-base md:text-lg lg:text-xl font-bold lg:mb-6 px-5 mt-5">
       رستوران‌های زنجیره‌ای ترخینه
       </Typography>
-      <Typography variant="p" className="text-white lg:text-3xl lg:leading-[3rem] mb-4 p-5">
+      <Typography variant="paragraph" className="text-white lg:text-3xl lg:leading-[3rem] mb-4 p-5">
       مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار ماست که بیش از ۲۰ سال است خدمت‌گزار مردم شریف ایران هستیم. ما در رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور شان شما عزیزان ارائه دهیم.
       </Typography>
       <div className='flex justify-end items-cener px-5 md:px-0'>
