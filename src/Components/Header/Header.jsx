@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Logo from "../../assets/Images/Logo/logo.png";
+import Logo from "../../Assets/Images/Logo/logo.png";
 
 import {
   Navbar,
@@ -118,25 +118,25 @@ const RestaurantMenusMnnuItems = [
   {
     id: 1,
     to: "",
-    image: "src/assets/Images/Menu/menu1.png",
+    image: "src/Assets/Images/Menu/menu1.png",
     title: "غذای اصلی",
   },
   {
     id: 2,
     to: "",
-    image: "src/assets/Images/Menu/menu2.png",
+    image: "src/Assets/Images/Menu/menu2.png",
     title: " پیش غذا",
   },
   {
     id: 3,
     to: "",
-    image: "src/assets/Images/Menu/menu3.png",
+    image: "src/Assets/Images/Menu/menu3.png",
     title: " دسر ",
   },
   {
     id: 4,
     to: "",
-    image: "src/assets/Images/Menu/menu4.png",
+    image: "src/Assets/Images/Menu/menu4.png",
     title: " نوشیدنی ",
   },
 ];
@@ -225,11 +225,9 @@ function NavList() {
   ];
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography as="a" href="#" variant="small" className="font-normal">
         <NavLink end to="/" className="flex items-center gap-2 py-2 pr-4">
           صفحه اصلی
         </NavLink>
-      </Typography>
       <RestaurantMenusMnnu />
       <BranchesMnnu />
       {NavListItems.map(({ id, to, title }) => {

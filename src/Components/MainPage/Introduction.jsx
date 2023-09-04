@@ -4,7 +4,7 @@ import { ArrowLeft2, Diagram, HomeWifi, MenuBoard, User } from "iconsax-react";
 
 const Introduction = () => {
     return ( 
-      <section className="w-full bg-[url('src/assets/Images/Bg/IntroductionMobile.png')] md:bg-[url('src/assets/Images/Bg/IntroductionDesktop.png')] bg-no-repeat bg-cover flex flex-col md:flex-row justify-around items-center gap-x-48 p-2 lg:p-28">
+      <section className="w-full bg-[url('src/Assets/Images/Bg/IntroductionMobile.png')] md:bg-[url('src/Assets/Images/Bg/IntroductionDesktop.png')] bg-no-repeat bg-cover flex flex-col md:flex-row justify-around items-center gap-x-48 p-2 lg:p-28">
         <div className="flex w-full md:w-[600px] flex-col">
 
       <Typography variant="h2" className="text-white text-base md:text-lg lg:text-xl font-bold lg:mb-6 px-5 mt-5">

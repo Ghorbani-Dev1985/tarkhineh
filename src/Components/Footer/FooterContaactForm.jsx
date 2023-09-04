@@ -1,60 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import FormikInput from "../../Common/FormikInput";
+import FormikInput from "../../Common/Formiklnput";
+import FormikTextarea from "../../Common/FormikTextarea";
 
 //? Formik
 const initialValues = {
-    FullName: "",
-    PhoneNumber: "",
-    Email: "",
-    TextMessage: "",
-  };
+  FullName: "",
+  PhoneNumber: "",
+  Email: "",
+  TextMessage: "",
+};
 
-  const validationSchema = Yup.object({
-    FullName: Yup.string()
+const validationSchema = Yup.object({
+  FullName: Yup.string()
     .required("ورود نام و نام خانوادگی الزامی می باشد")
     .min(5, "حداقل ۵ کاراکتر وارد نمایید"),
-    PhoneNumber: Yup.string()
-      .required("ورود شماره موبایل الزامی می باشد")
-      .matches(/^[0-9]{11}$/, "شماره موبایل را به درستی وارد نمایید")
-      .nullable(),
-    Email: Yup.string()
-        .min(3, "حداقل ۳ کاراکتر وارد نمایید")
-        .email("ایمیل وارد شده اشتباه است"),
-    TextMessage: Yup.string()
+  PhoneNumber: Yup.string()
+    .required("ورود شماره موبایل الزامی می باشد")
+    .matches(/^[0-9]{11}$/, "شماره موبایل را به درستی وارد نمایید")
+    .nullable(),
+  Email: Yup.string()
+    .min(3, "حداقل ۳ کاراکتر وارد نمایید")
+    .email("ایمیل وارد شده اشتباه است"),
+  TextMessage: Yup.string()
     .required("ورود متن پیام الزامی می باشد")
-    .min(20, "حداقل ۵ کاراکتر وارد نمایید"),
-  });
+    .min(20, "حداقل ۲۰ کاراکتر وارد نمایید"),
+});
 
 const FooterContactForm = () => {
-    const onSubmit = async () => {
-        try {
-     
-        } catch (error) {
-         
-        }
-      };
-    const formik = useFormik({
-        initialValues,
-        onSubmit,
-        validationSchema,
-        validateOnMount: true,
-      });
-    return ( 
-       <form onSubmit={formik.handleSubmit}>
-          <FormikInput 
-          label="نام و نام خانوادگی"
-          name="FullName"
-          formik={formik}
-          value="FullName"
+  const onSubmit = async () => {
+    try {
+    } catch (error) {}
+  };
+  const formik = useFormik({
+    initialValues,
+    onSubmit,
+    validationSchema,
+    validateOnMount: true,
+  });
+  return (
+    <form onSubmit={formik.handleSubmit}>
+      <div className="flex justify-between items-center gap-5 p-3">
+        <div className="flex flex-col w-2/3">
+          <FormikInput
+            placeholder="نام و نام خانوادگی *"
+            name="FullName"
+            formik={formik}
+            value="FullName"
           />
-
-          <button type="submit">
-          ارسال پیام
+          <FormikInput
+            placeholder="شماره موبایل *"
+            type="tel"
+            name="PhoneNumber"
+            formik={formik}
+            value="PhoneNumber"
+          />
+          <FormikInput
+            placeholder="ایمیل (اختیاری)"
+            type="email"
+            name="Email"
+            formik={formik}
+            value="Email"
+          />
+        </div>
+        <div className="flex flex-col w-full items-end">
+          <FormikTextarea
+            placeholder="متن پیام"
+            name="TextMessage"
+            formik={formik}
+            value="TextMessage"
+            
+          />
+         
+          <button
+            type="submit"
+            className="border border-white rounded-lg max-w-xs px-16 hover:font-extrabold hover:text-lg transition-all ease-linear duration-300 py-1 text-white"
+          >
+            ارسال پیام
           </button>
-       </form>
-     );
-}
- 
+        </div>
+      </div>
+    </form>
+  );
+};
+
 export default FooterContactForm;
+
+
+
+// https://db-json-rho.vercel.app/

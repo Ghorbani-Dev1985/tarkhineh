@@ -1,61 +1,54 @@
 /* ----------------------------- Estedad FaNum ----------------------------- */
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 900;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 800;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: bold;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 600;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 500;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: normal;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 300;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 200;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 }
 @font-face {
-	font-family: Estedad-FD;
+	font-family: EstedadFD;
 	font-style: normal;
 	font-weight: 100;
 	src: url('../Fonts/Estedad-FD/Estedad-FD-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
@@ -123,3 +116,4 @@
 	font-weight: 100;
 	src: url('../Fonts/Estedad/Estedad-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
 }
+

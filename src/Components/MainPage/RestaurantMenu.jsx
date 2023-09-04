@@ -4,25 +4,25 @@ import React from 'react';
 const Menus = [
     {
         id: 1,
-        imgSrc: "../src/assets/Images/Menu/menu1.png",
+        imgSrc: "../src/Assets/Images/Menu/menu1.png",
         imgAlt: "غذای اصلی",
         btnText: "غذای اصلی",
     },
     {
         id: 2,
-        imgSrc: "../src/assets/Images/Menu/menu2.png",
+        imgSrc: "../src/Assets/Images/Menu/menu2.png",
         imgAlt: "پیش غذا",
         btnText: "پیش غذا ",
     },
     {
         id: 3,
-        imgSrc: "../src/assets/Images/Menu/menu3.png",
+        imgSrc: "../src/Assets/Images/Menu/menu3.png",
         imgAlt: " دسر",
         btnText: " دسر",
     },
     {
         id: 4,
-        imgSrc: "../src/assets/Images/Menu/menu4.png",
+        imgSrc: "../src/Assets/Images/Menu/menu4.png",
         imgAlt: " نوشیدنی",
         btnText: " نوشیدنی",
     }

@@ -108,8 +108,8 @@ module.exports = withMT({
         "99p": "99%",
       },
       fontFamily: {
-        EstedadFD: ["Estedad-FD", "Tahome"],
-        Estedad: ["Estedad", "Tahome"],
+        EstedadFD: ["EstedadFD" , "sana-serif"],
+        Estedad: ["Estedad" , "sans-serif"],
       },
       boxShadow: {
         "3xl": "14px 17px 40px 4px",

@@ -3,7 +3,7 @@
 const branchesInfo = [
     {
       id: 1,
-      imgSrc: "src/assets/Images/Branch/branch1.png",
+      imgSrc: "src/Assets/Images/Branch/branch1.png",
       imgAlt: "شعبه اکباتان",
       branchTitle: "شعبه اکباتان",
       branchAddress: "شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم",
@@ -11,7 +11,7 @@ const branchesInfo = [
     },
     {
       id: 2,
-      imgSrc: "src/assets/Images/Branch/branch2.png",
+      imgSrc: "src/Assets/Images/Branch/branch2.png",
       imgAlt: "شعبه چالوس",
       branchTitle: "شعبه چالوس",
       branchAddress:"چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
@@ -19,7 +19,7 @@ const branchesInfo = [
     },
     {
       id: 3,
-      imgSrc: "src/assets/Images/Branch/branch3.png",
+      imgSrc: "src/Assets/Images/Branch/branch3.png",
       imgAlt: "شعبه اقدسیه",
       branchTitle: "شعبه اقدسیه",
       branchAddress: "خیابان اقدسیه، نرسیده به میدان خیام، پلاک ۸",
@@ -27,7 +27,7 @@ const branchesInfo = [
     },
     {
       id: 4,
-      imgSrc: "src/assets/Images/Branch/branch4.png",
+      imgSrc: "src/Assets/Images/Branch/branch4.png",
       imgAlt: "شعبه ونک",
       branchTitle: "شعبه ونک",
       branchAddress: "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶",
