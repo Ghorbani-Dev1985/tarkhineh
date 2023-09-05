@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import FormikInput from "../../Common/Formiklnput";
 import FormikTextarea from "../../Common/FormikTextarea";
+import AddService from "../../Services/AddService";
+import { toast } from "react-hot-toast";
 
 //? Formik
 const initialValues = {
@@ -29,9 +31,13 @@ const validationSchema = Yup.object({
 });
 
 const FooterContactForm = () => {
-  const onSubmit = async () => {
+  const onSubmit = async (values) => {
     try {
-    } catch (error) {}
+      await AddService(values);
+      toast.success("پیام شما با موفقیت ثبت گردید");
+    } catch (error) {
+      toast.error("خطا در برقراری ارتباط با سرور");
+    }
   };
   const formik = useFormik({
     initialValues,
@@ -55,6 +61,7 @@ const FooterContactForm = () => {
             name="PhoneNumber"
             formik={formik}
             value="PhoneNumber"
+            className="font-Estedad text-left"
           />
           <FormikInput
             placeholder="ایمیل (اختیاری)"
@@ -62,6 +69,7 @@ const FooterContactForm = () => {
             name="Email"
             formik={formik}
             value="Email"
+            className="font-Estedad text-left"
           />
         </div>
         <div className="flex flex-col w-full items-end">
@@ -70,12 +78,12 @@ const FooterContactForm = () => {
             name="TextMessage"
             formik={formik}
             value="TextMessage"
-            
           />
-         
+
           <button
             type="submit"
-            className="border border-white rounded-lg max-w-xs px-16 hover:font-extrabold hover:text-lg transition-all ease-linear duration-300 py-1 text-white"
+            disabled={!formik.isValid}
+            className="border disabled:opacity-30 disabled:hover:font-normal cursor-pointer border-white rounded-lg max-w-xs px-16 hover:font-extrabold text-lg transition-all ease-linear duration-300 py-1 text-white"
           >
             ارسال پیام
           </button>
@@ -87,6 +95,4 @@ const FooterContactForm = () => {
 
 export default FooterContactForm;
 
-
-
-// https://db-json-rho.vercel.app/
+// https://db-json-delta.vercel.app/db.json

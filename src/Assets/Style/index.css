@@ -13,7 +13,7 @@
     @apply dark:bg-navy-700 p-0 m-0;
   }
   body {
-    @apply m-0 p-0 !font-EstedadFD text-3xl overflow-x-hidden text-right text-PrimaryBrandColor dark:bg-navy-700;
+    @apply m-0 p-0 !font-Estedad text-base overflow-x-hidden text-right text-PrimaryBrandColor dark:bg-navy-700;
   }
 }
 
@@ -36,4 +36,29 @@ p {
 }
 .center {
   @apply w-full flex justify-center items-center;
+}
+
+
+
+.step-item {
+  @apply relative flex-col justify-center items-center w-full;
+}
+.step-item:not(:first-child):before {
+  @apply content-[''] bg-slate-200 absolute w-full h-[3px] left-2/4 top-1/3 -translate-y-2/4;
+}
+.step {
+  @apply w-10 h-10 flex items-center justify-center z-10 relative bg-slate-700 rounded-full font-semibold text-white;
+}
+.active .step {
+  @apply bg-PrimaryBrandColor;
+}
+.complete .step {
+  @apply bg-green-500;
+}
+.complete p {
+  @apply text-white;
+}
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+  @apply bg-green-500 hidden;
 }

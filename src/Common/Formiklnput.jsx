@@ -19,7 +19,6 @@ const FormikInput = ({ name, formik, type , placeholder }) => {
             {formik.errors[name]}
           </p>
         )}
-       
       </div>
     </>
   );

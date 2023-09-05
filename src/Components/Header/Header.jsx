@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Logo from "../../Assets/Images/Logo/logo.png";
 
@@ -43,18 +43,23 @@ import {
   Wallet2,
 } from "iconsax-react";
 
-
-import BranchesMnnuItems from './../../util/Branches' 
+import BranchesMnnuItems from "./../../util/Branches";
+import Login from "./Login/Login";
 
 function BranchesMnnu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-
   const renderItems = BranchesMnnuItems.map(
-    ({ id, branchTitle, branchAddress, imgSrc , imgAlt , branchLink}) => (
-      <Link to={branchLink} key={id} className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300">
+    ({ id, branchTitle, branchAddress, imgSrc, imgAlt, branchLink }) => (
+      <Link
+        to={branchLink}
+        key={id}
+        className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300"
+      >
         <MenuItem className="flex flex-col items-center gap-5 rounded-lg">
-         <div><img src={imgSrc} alt={imgAlt} className="rounded-xl"/></div> 
+          <div>
+            <img src={imgSrc} alt={imgAlt} className="rounded-xl" />
+          </div>
           <div className="flex flex-col items-center">
             <Typography
               variant="h6"
@@ -62,7 +67,10 @@ function BranchesMnnu() {
             >
               {branchTitle}
             </Typography>
-            <Typography variant="paragraph" className="font-normal text-center text-nautral-700">
+            <Typography
+              variant="paragraph"
+              className="font-normal text-center text-nautral-700"
+            >
               {branchAddress}
             </Typography>
           </div>
@@ -81,7 +89,7 @@ function BranchesMnnu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" className="font-normal">
+          <Typography as="div" className="font-bold">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -146,21 +154,31 @@ function RestaurantMenusMnnu() {
   const [isRestaurantMobileMenuOpen, setIsRestaurantMobileMenuOpen] =
     useState(false);
 
-  const renderItems = RestaurantMenusMnnuItems.map(({ id, to, title, image}) => (
-    <Link key={id} to={to} className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300">
-      <MenuItem className="flex flex-col items-center gap-3 rounded-lg">
-        <div className="flex flex-col items-center">
-          <img src={image} alt="رستوران‌های ترخینه" className="w-12 h-12 object-fill"/>
-          <Typography
-            variant="h6"
-            className="flex my-4 items-center text-sm text-nautral-500"
-          >
-            {title}
-          </Typography>
-        </div>
-      </MenuItem>
-    </Link>
-  ));
+  const renderItems = RestaurantMenusMnnuItems.map(
+    ({ id, to, title, image }) => (
+      <Link
+        key={id}
+        to={to}
+        className="hover:bg-green-50 rounded-lg transition-all ease-linear duration-300"
+      >
+        <MenuItem className="flex flex-col items-center gap-3 rounded-lg">
+          <div className="flex flex-col items-center">
+            <img
+              src={image}
+              alt="رستوران‌های ترخینه"
+              className="w-12 h-12 object-fill"
+            />
+            <Typography
+              variant="h6"
+              className="flex my-4 items-center text-sm text-nautral-500"
+            >
+              {title}
+            </Typography>
+          </div>
+        </MenuItem>
+      </Link>
+    )
+  );
 
   return (
     <>
@@ -172,7 +190,7 @@ function RestaurantMenusMnnu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" className="font-normal">
+          <Typography as="div" className="font-bold">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4"
               selected={isRestaurantMenuOpen || isRestaurantMobileMenuOpen}
@@ -225,15 +243,19 @@ function NavList() {
   ];
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-        <NavLink end to="/" className="flex items-center gap-2 py-2 pr-4">
-          صفحه اصلی
-        </NavLink>
+      <NavLink
+        end
+        to="/"
+        className="flex font-bold items-center gap-2 py-2 pr-4"
+      >
+        صفحه اصلی
+      </NavLink>
       <RestaurantMenusMnnu />
       <BranchesMnnu />
       {NavListItems.map(({ id, to, title }) => {
         return (
           <NavLink key={id} to={to}>
-            <ListItem className="flex items-center gap-2 py-2 pr-4">
+            <ListItem className="flex font-bold items-center gap-2 py-2 pr-4">
               {title}
             </ListItem>
           </NavLink>
@@ -246,7 +268,8 @@ function NavList() {
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
   const [openUsersMenu, setOpenUsresMenu] = useState(false);
-  React.useEffect(() => {
+
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
@@ -321,7 +344,7 @@ const Header = () => {
               <Button className="bg-brand-50 rounded-lg p-3 flex justify-center items-center">
                 <ShoppingCart size="24" className="text-PrimaryBrandColor" />
               </Button>
-              <Menu
+              {/* <Menu
                 open={openUsersMenu}
                 handler={setOpenUsresMenu}
                 animate={{
@@ -358,6 +381,9 @@ const Header = () => {
                     );
                   })}
                 </MenuList>
+              </Menu> */}
+              <Menu>
+                <Login />
               </Menu>
             </div>
           </div>

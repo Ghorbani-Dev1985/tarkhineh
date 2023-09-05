@@ -20,7 +20,7 @@ const FormikInput = ({ name, formik,  placeholder }) => {
           value={formik.values[name]}
           onKeyUp={handleCount}
           ></textarea>
-           <p className="flex justify-end items-center text-white font-bold">{200 - textAreaCount } / {textAreaCount}</p>
+           <p className="flex justify-end items-center text-white text-base font-bold"><span className="text-rose-500">{200 - textAreaCount }</span> / {textAreaCount}</p>
          {formik.errors[name] && formik.touched[name] && (
           <p className="text-error-500 text-sm font-bold mt-3">
             {formik.errors[name]}
